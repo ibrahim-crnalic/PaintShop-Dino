@@ -1,0 +1,19 @@
+$primarycolor:#2F3349;
+$secondarycolor: #de6509;
+
+@font-face {
+    font-family: "Festivo";
+    src: url("./assets/fonts/ahmet-altun---festivolettersno-14.woff.ttf");
+  } 
+ @font-face {
+    font-family: "Rubik";
+    src: url("./assets/fonts/Rubik-Regular.ttf");
+ } 
+ @font-face {
+    font-family: "Rubic-Bold";
+    src: url("./assets/fonts/Rubik-Bold.ttf");
+ }
+
+$titlefont: "Festivo";
+$textfont:"Rubic";
+$textfontbold:"Rubic-Bold";
