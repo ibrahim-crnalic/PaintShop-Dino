@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo from "../../assets/images/logo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import Menu from "../../assets/icons/menu.png";
 import MobileMenu from "../mobileMenu";
 
@@ -9,12 +9,18 @@ export default function Navbar() {
   const toggleMobileMenu = () => {
     setOpen(!open);
   };
-
+  const navigate = useNavigate();
   return (
     <>
       <div className="navbar-wrapper">
         <div className="navbar-logo">
-          <img src={Logo} alt="navbar-logo" />
+          <img
+            src={Logo}
+            onClick={() => {
+              navigate("/");
+            }}
+            alt="navbar-logo"
+          />
         </div>
         <div className="navbar-link">
           <NavLink to="/" className="link">

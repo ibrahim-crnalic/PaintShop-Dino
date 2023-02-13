@@ -24,6 +24,7 @@
 .navbar-wrapper .navbar-logo img {
   width: 200px;
   height: 70px;
+  cursor: pointer;
 }
 .navbar-wrapper .navbar-link {
   display: flex;
@@ -42,6 +43,91 @@
   color: #de6509;
 }
 
+.navNone {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-wrapper {
+    display: none;
+  }
+  .navNone {
+    display: none;
+  }
+  .navContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navContent .navbar-logo img {
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+  }
+  .navContent .navbar-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+  }
+  .navContent .navbar-burger img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navContent {
+    display: none;
+  }
+}
+.mobileMenu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.mobileMenu-wrapper .menu-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mobileMenu-wrapper .menu-head .logo img {
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+}
+.mobileMenu-wrapper .menu-head .close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+.mobileMenu-wrapper .menu-head .close img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.mobileMenu-wrapper .menu-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: center;
+}
+.mobileMenu-wrapper .menu-body .link {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-family: "Rubic-Bold";
+  font-weight: 500;
+  color: #2F3349;
+}
+.mobileMenu-wrapper .menu-body .link:hover {
+  color: #de6509;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobileMenu-wrapper {
+    display: none;
+  }
+}
 body {
   margin: 0;
   padding: 0;
