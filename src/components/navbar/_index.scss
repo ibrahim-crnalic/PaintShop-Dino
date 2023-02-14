@@ -11,24 +11,64 @@
     img {
       width: 200px;
       height: 70px;
+      cursor: pointer;
     }
   }
-  .navbar-link{
+  .navbar-link {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 45%;
-    .link{
+    .link {
       font-family: $textfontbold;
       font-weight: 500;
       color: $primarycolor;
       text-decoration: none;
-      
     }
-    .link:hover{
+    .link:hover {
       color: $secondarycolor;
     }
-   
   }
 }
+
+.navNone {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .navbar-wrapper {
+    display: none;
+  }
+  .navNone {
+    display: none;
+  }
+  .navContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .navbar-logo {
+      img {
+        width: 200px;
+        height: 70px;
+        cursor: pointer;
+      }
+    }
+    .navbar-burger {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .navContent{
+    display: none;
+  }
+}
+
