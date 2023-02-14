@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../../assets/images/logo.svg";
 import Close from "../../assets/icons/close.png";
 import { NavLink, useNavigate } from "react-router-dom";
+import Instagram from "../../assets/icons/instagram.png";
+import Facebook from "../../assets/icons/facebook.png";
 
 export default function MobileMenu(props) {
   const navigate = useNavigate();
@@ -35,6 +37,14 @@ export default function MobileMenu(props) {
         <NavLink to="/gallery" className="link" onClick={props.close}>
           GALERIJA
         </NavLink>
+      </div>
+      <div className="mobileMenu-icons">
+        <a href="https://www.instagram.com/paintshopdino/">
+          <img src={Instagram} alt="instagram-icon" />
+        </a>
+        <a href="https://m.facebook.com/people/Paintshop-Dino/100074982594299/?comment_id=Y29tbWVudDozMjI3Njk3ODAwMTA5NTJfMzIyNzgwNDUwMDA5ODg1">
+          <img src={Facebook} alt="facebook-icon" />
+        </a>
       </div>
     </div>
   );

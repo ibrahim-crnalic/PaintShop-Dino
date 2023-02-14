@@ -122,6 +122,22 @@
 .mobileMenu-wrapper .menu-body .link:hover {
   color: #de6509;
 }
+.mobileMenu-wrapper .mobileMenu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.mobileMenu-wrapper .mobileMenu-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.mobileMenu-wrapper .mobileMenu-icons img:hover {
+  transform: scale(1.1);
+}
 
 @media only screen and (min-width: 1024px) {
   .mobileMenu-wrapper {
