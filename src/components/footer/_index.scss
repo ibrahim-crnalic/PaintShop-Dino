@@ -1,0 +1,17 @@
+.footer-wrapper{
+    width: 100vh;
+    height: 100%;
+    .footer-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        img{
+            width: 200px;
+            height: 70px;
+        }
+        p{
+            font-family: $textfont;
+        }
+    }
+}
