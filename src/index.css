@@ -42,6 +42,25 @@
 .navbar-wrapper .navbar-link .link:hover {
   color: #de6509;
 }
+.navbar-wrapper .navbar-link .link {
+  position: relative;
+}
+.navbar-wrapper .navbar-link .link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #de6509;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar-wrapper .navbar-link .link:hover:after {
+  width: 100%;
+  left: 0;
+}
 
 .navNone {
   display: none;
@@ -126,13 +145,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 2rem;
+  align-items: flex-end;
+  height: 200px;
 }
 .mobileMenu-wrapper .mobileMenu-icons img {
   width: 30px;
   height: 30px;
-  margin-right: 1rem;
-  padding-left: 1rem;
+  margin-right: 0.5rem;
+  padding-left: 0.5rem;
   cursor: pointer;
 }
 .mobileMenu-wrapper .mobileMenu-icons img:hover {
