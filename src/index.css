@@ -164,6 +164,151 @@
     display: none;
   }
 }
+.footer-wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-wrapper .footer-logo {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: relative;
+}
+.footer-wrapper .footer-logo img {
+  width: 200px;
+  height: 70px;
+}
+.footer-wrapper .footer-logo p {
+  font-family: "Rubic";
+  color: #2F3349;
+  font-size: 16px;
+  margin-top: 3rem;
+}
+.footer-wrapper .footer-logo .coppy-rights {
+  font-family: "Rubic";
+  color: #2F3349;
+  opacity: 0.7;
+  font-size: 12px;
+  margin-top: 6rem;
+  position: absolute;
+  bottom: 0;
+}
+.footer-wrapper .footer-information {
+  display: flex;
+  flex-direction: column;
+}
+.footer-wrapper .footer-information .information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+.footer-wrapper .footer-information .information .info-img {
+  width: 20px;
+  height: 20px;
+}
+.footer-wrapper .footer-information .information p {
+  font-family: "Rubic";
+  color: #2F3349;
+  font-size: 16px;
+}
+.footer-wrapper .footer-information .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-wrapper .footer-information .social-media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5rem;
+  margin-top: 6rem;
+  padding-left: 0.5rem;
+  cursor: pointer;
+}
+.footer-wrapper .footer-information .social-media img:hover {
+  transform: scale(1.1);
+}
+.footer-wrapper .footer-workingHours {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.footer-wrapper .footer-workingHours h1 {
+  font-family: "Rubic-Bold";
+  color: #2F3349;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.footer-wrapper .footer-workingHours .working-hours {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-wrapper .footer-workingHours .working-hours .working-days {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-wrapper .footer-workingHours .working-hours .working-days .days-title {
+  margin: 0;
+  font-family: "Rubic-Bold";
+  color: #2F3349;
+  font-size: 16px;
+}
+.footer-wrapper .footer-workingHours .working-hours .working-days .opening-hours {
+  margin-top: 0.5rem;
+  font-family: "Rubic";
+  color: #2F3349;
+  font-size: 14px;
+}
+.footer-wrapper .coppy-rights-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-wrapper .footer-logo {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .footer-wrapper .footer-logo p {
+    text-align: center;
+  }
+  .footer-wrapper .footer-logo .coppy-rights {
+    display: none;
+  }
+  .footer-wrapper .coppy-rights-mobile {
+    display: block;
+    font-family: "Rubic";
+    color: #2F3349;
+    opacity: 0.7;
+    font-size: 12px;
+    margin-top: 6rem;
+    text-align: center;
+  }
+  .footer-wrapper .footer-information .social-media img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-wrapper .footer-workingHours {
+    width: 90%;
+  }
+  .footer-wrapper .footer-workingHours .working-hours {
+    justify-content: center;
+  }
+}
 body {
   margin: 0;
   padding: 0;

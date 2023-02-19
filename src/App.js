@@ -5,6 +5,7 @@ import HomePage from "./pages/homepage";
 import About from "./pages/about";
 import Services from "./pages/services";
 import Gallery from "./pages/gallery";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
+      
     </div>
   );
 }
