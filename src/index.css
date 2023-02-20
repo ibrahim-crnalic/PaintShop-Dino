@@ -103,6 +103,7 @@
 .mobileMenu-wrapper {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .mobileMenu-wrapper .menu-head {
   display: flex;
