@@ -3,12 +3,20 @@ import Logo from "../../assets/images/logo.svg";
 import { NavLink,useNavigate } from "react-router-dom";
 import Menu from "../../assets/icons/menu.png";
 import MobileMenu from "../mobileMenu";
+import disableScroll from "disable-scroll";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const toggleMobileMenu = () => {
     setOpen(!open);
   };
+  useEffect(() => {
+    if (open) {
+      disableScroll.on();
+    } else {
+      disableScroll.off();
+    }
+  }, [open]);
   const navigate = useNavigate();
   return (
     <>
