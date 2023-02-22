@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Logo from "../../assets/images/logo.svg";
-import { NavLink,useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Menu from "../../assets/icons/menu.png";
 import MobileMenu from "../mobileMenu";
 import disableScroll from "disable-scroll";
