@@ -175,6 +175,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 3rem 0;
 }
 .footer-wrapper .footer-logo {
   display: flex;
