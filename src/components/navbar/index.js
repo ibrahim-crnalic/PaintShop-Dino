@@ -34,7 +34,7 @@ export default function Navbar() {
           <NavLink to="/" className="link">
             POČETNA
           </NavLink>
-          <NavLink to="/about" className="link">
+          <NavLink to="/#about" className="link">
             O NAMA
           </NavLink>
           <NavLink to="/services" className="link">

@@ -28,7 +28,7 @@ export default function MobileMenu(props) {
         <NavLink to="/" className="link" onClick={props.close}>
           POČETNA
         </NavLink>
-        <NavLink to="/about" className="link" onClick={props.close}>
+        <NavLink to="/#about" className="link" onClick={props.close}>
           O NAMA
         </NavLink>
         <NavLink to="/services" className="link" onClick={props.close}>
