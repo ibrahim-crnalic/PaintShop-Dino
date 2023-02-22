@@ -10,6 +10,10 @@
   font-family: "Rubic-Bold";
   src: url("./assets/fonts/Rubik-Bold.ttf");
 }
+@font-face {
+  font-family: "Pacifico";
+  src: url("./assets/fonts/Pacifico-Regular.ttf");
+}
 .navbar-wrapper {
   display: flex;
   flex-direction: row;
@@ -308,6 +312,71 @@
   }
   .footer-wrapper .footer-workingHours .working-hours {
     justify-content: center;
+  }
+}
+.hero-wrapper {
+  position: relative;
+  height: 90vh;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+}
+.hero-wrapper .hero-listing {
+  height: 100vh;
+  min-height: 90vh;
+  max-height: 90vh;
+  width: 100vw;
+  position: relative;
+}
+.hero-wrapper .hero-listing .inner-swiper {
+  height: 100%;
+  width: 100%;
+}
+.hero-wrapper .hero-listing .inner-swiper .swiper {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0;
+}
+.hero-wrapper .hero-listing .inner-swiper .swiper img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0.3;
+}
+.hero-wrapper .hero-listing .inner {
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  margin-left: 10rem;
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  transform: translateY(80%);
+}
+.hero-wrapper .hero-listing .inner .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.hero-wrapper .hero-listing .inner h2 {
+  color: #de6509;
+  font-size: 90px;
+  font-family: "Pacifico";
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-wrapper .hero-listing .inner {
+    margin-left: 2rem;
+  }
+  .hero-wrapper .hero-listing .inner h2 {
+    font-size: 40px;
+    width: 100vw;
+    text-align: center;
   }
 }
 body {
