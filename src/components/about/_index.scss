@@ -5,7 +5,8 @@
   flex-direction: column;
   background-color: $primarycolor;
   padding: 3rem 0;
-  .about-row {
+  .about-row,
+  .about-row-second {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -39,6 +40,7 @@
         background-color: $secondarycolor;
         color: white;
         padding: 0.5rem 1rem;
+        margin-top: 1rem;
         border-radius: 2rem;
         font-size: 20px;
       }
@@ -46,6 +48,48 @@
         background-color: white;
         color: $secondarycolor;
         cursor: pointer;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .about-wrapper {
+    .about-row {
+      flex-direction: column;
+      .about-left {
+        width: 100%;
+        img {
+          width: 90vw;
+        }
+      }
+      .about-right {
+        width: 100%;
+        padding: 2rem 0;
+        p {
+          text-align: center;
+          font-size: 16px;
+          padding: 0 2rem;
+        
+        }
+      }
+    }
+    .about-row-second {
+      flex-direction: column-reverse;
+      .about-left {
+        width: 100%;
+        img {
+          width: 90vw;
+        }
+      }
+      .about-right {
+        width: 100%;
+        padding: 2rem 0;
+        p {
+          text-align: center;
+          font-size: 16px;
+          padding: 0 2rem;
+        
+        }
       }
     }
   }
