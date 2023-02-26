@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/logo.png";
 import { NavLink, useNavigate } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import Menu from "../../assets/icons/menu.png";
 import MobileMenu from "../mobileMenu";
 import disableScroll from "disable-scroll";
@@ -18,6 +19,19 @@ export default function Navbar() {
     }
   }, [open]);
   const navigate = useNavigate();
+  
+  const prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar-wrapper").style.top = "0";
+  } else if (currentScrollPos == 0) {
+    document.querySelector(".navbar-wrapper").style.top = "0";
+  } else {
+    document.querySelector(".navbar-wrapper").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
   return (
     <>
       <div className="navbar-wrapper">
@@ -34,9 +48,9 @@ export default function Navbar() {
           <NavLink to="/" className="link">
             POČETNA
           </NavLink>
-          <NavLink to="/#about" className="link">
+          <NavHashLink to="/#about" className="link">
             O NAMA
-          </NavLink>
+          </NavHashLink>
           <NavLink to="/services" className="link">
             USLUGE
           </NavLink>

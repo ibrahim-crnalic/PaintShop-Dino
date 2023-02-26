@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/logo.png";
 import Close from "../../assets/icons/close.png";
 import { NavLink, useNavigate } from "react-router-dom";
 import Instagram from "../../assets/icons/instagram.png";

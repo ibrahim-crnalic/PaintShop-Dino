@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/logo.png";
 import Location from "../../assets/icons/location.png";
 import Call from "../../assets/icons/call.png";
 import Email from "../../assets/icons/email.png";

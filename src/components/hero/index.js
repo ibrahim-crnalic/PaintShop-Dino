@@ -7,11 +7,13 @@ import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Navbar from "../navbar";
 SwiperCore.use([Autoplay]);
 
 export default function Hero() {
   return (
     <div className="hero-wrapper">
+      <Navbar />
       <div className="hero-listing">
         <div className="inner-swiper">
           <Swiper
@@ -43,4 +45,4 @@ export default function Hero() {
     </div>
   );
 }
-const imgs =  [Hero1, Hero2, Hero3] ;
+const imgs = [Hero1, Hero2, Hero3];
