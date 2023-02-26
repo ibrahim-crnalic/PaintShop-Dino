@@ -23,7 +23,7 @@ export default function About() {
           <a className="read-more">Saznaj vise</a>
         </div>
       </div>
-      <div className="about-row">
+      <div className="about-row-second">
         <div className="about-right">
           <p>
             Naša usluga autolakirerstva uključuje nanošenje boje i laka na
@@ -44,6 +44,7 @@ export default function About() {
           <img src={Certificate2} alt="certificate-image" />
         </div>
       </div>
+
     </div>
   );
 }
