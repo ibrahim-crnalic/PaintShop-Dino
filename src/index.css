@@ -14,12 +14,19 @@
   font-family: "Pacifico";
   src: url("./assets/fonts/Pacifico-Regular.ttf");
 }
+@font-face {
+  font-family: "Krinkes";
+  src: url("./assets/fonts/KrinkesRegularPERSONAL.ttf");
+}
 .navbar-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100vw;
-  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: top 0.3s;
 }
 .navbar-wrapper .navbar-logo {
   display: flex;
@@ -27,20 +34,19 @@
 }
 .navbar-wrapper .navbar-logo img {
   width: 200px;
-  height: 70px;
   cursor: pointer;
 }
 .navbar-wrapper .navbar-link {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
   width: 45%;
+  margin-top: 2rem;
 }
 .navbar-wrapper .navbar-link .link {
   font-family: "Rubic-Bold";
   font-weight: 500;
-  color: #2F3349;
+  color: white;
   text-decoration: none;
 }
 .navbar-wrapper .navbar-link .link:hover {
@@ -48,6 +54,7 @@
 }
 .navbar-wrapper .navbar-link .link {
   position: relative;
+  height: 1.8rem;
 }
 .navbar-wrapper .navbar-link .link:after {
   background: none repeat scroll 0 0 transparent;
@@ -176,6 +183,7 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 3rem 0;
+  background-color: #2F3349;
 }
 .footer-wrapper .footer-logo {
   display: flex;
@@ -185,17 +193,16 @@
 }
 .footer-wrapper .footer-logo img {
   width: 200px;
-  height: 70px;
 }
 .footer-wrapper .footer-logo p {
   font-family: "Rubic";
-  color: #2F3349;
+  color: white;
   font-size: 16px;
   margin-top: 3rem;
 }
 .footer-wrapper .footer-logo .coppy-rights {
   font-family: "Rubic";
-  color: #2F3349;
+  color: white;
   opacity: 0.7;
   font-size: 12px;
   margin-top: 6rem;
@@ -219,7 +226,7 @@
 }
 .footer-wrapper .footer-information .information p {
   font-family: "Rubic";
-  color: #2F3349;
+  color: white;
   font-size: 16px;
 }
 .footer-wrapper .footer-information .social-media {
@@ -245,7 +252,7 @@
 }
 .footer-wrapper .footer-workingHours h1 {
   font-family: "Rubic-Bold";
-  color: #2F3349;
+  color: white;
   font-size: 18px;
   width: 100%;
   text-align: center;
@@ -266,13 +273,13 @@
 .footer-wrapper .footer-workingHours .working-hours .working-days .days-title {
   margin: 0;
   font-family: "Rubic-Bold";
-  color: #2F3349;
+  color: white;
   font-size: 16px;
 }
 .footer-wrapper .footer-workingHours .working-hours .working-days .opening-hours {
   margin-top: 0.5rem;
   font-family: "Rubic";
-  color: #2F3349;
+  color: white;
   font-size: 14px;
 }
 .footer-wrapper .coppy-rights-mobile {
@@ -317,7 +324,7 @@
 }
 .hero-wrapper {
   position: relative;
-  height: 90vh;
+  height: 100vh;
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
@@ -325,8 +332,8 @@
 }
 .hero-wrapper .hero-listing {
   height: 100vh;
-  min-height: 90vh;
-  max-height: 90vh;
+  min-height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   position: relative;
 }
@@ -363,11 +370,11 @@
   margin-top: 1rem;
 }
 .hero-wrapper .hero-listing .inner h2 {
-  color: #de6509;
-  font-size: 90px;
-  font-family: "Pacifico";
+  color: white;
+  font-size: 120px;
+  font-family: "Krinkes";
   line-height: 28px;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -380,6 +387,58 @@
     text-align: center;
   }
 }
+.about-wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #2F3349;
+  padding: 3rem 0;
+}
+.about-wrapper .about-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-wrapper .about-row .about-left {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about-wrapper .about-row .about-left img {
+  width: 40vw;
+  height: 100vh;
+}
+.about-wrapper .about-row .about-right {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-wrapper .about-row .about-right p {
+  font-family: "Rubic";
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 0 4rem;
+}
+.about-wrapper .about-row .about-right .read-more {
+  background-color: #de6509;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 20px;
+}
+.about-wrapper .about-row .about-right .read-more:hover {
+  background-color: white;
+  color: #de6509;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   padding: 0;

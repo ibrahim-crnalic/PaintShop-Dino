@@ -17,8 +17,12 @@ $secondarycolor: #de6509;
    font-family: "Pacifico";
    src: url("./assets/fonts/Pacifico-Regular.ttf");
 }
+@font-face {
+   font-family: "Krinkes";
+   src: url("./assets/fonts/KrinkesRegularPERSONAL.ttf");
+}
 
 $titlefont: "Festivo";
 $textfont:"Rubic";
 $textfontbold:"Rubic-Bold";
-$herotitle:"Pacifico";
+$herotitle:"Krinkes";
