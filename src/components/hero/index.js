@@ -3,7 +3,7 @@ import Hero1 from "../../assets/images/hero-first.png";
 import Hero2 from "../../assets/images/hero-second.jpg";
 import Hero3 from "../../assets/images/hero-third.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import SwiperCore, { Navigation, Pagination, Autoplay, FreeMode } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";

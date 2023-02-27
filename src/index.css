@@ -492,6 +492,15 @@
     padding: 0 2rem;
   }
 }
+.map-wrapper {
+  width: 100vw;
+  margin-bottom: -1rem;
+}
+.map-wrapper .map1 {
+  width: 100vw;
+  filter: grayscale(100%);
+}
+
 body {
   margin: 0;
   padding: 0;
