@@ -41,6 +41,9 @@
     .link:hover {
       color: $secondarycolor;
     }
+    .active {
+      background-color: transparent;
+    }
   }
   .mobileMenu-icons {
     display: flex;

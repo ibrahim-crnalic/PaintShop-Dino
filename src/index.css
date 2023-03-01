@@ -52,6 +52,9 @@
 .navbar-wrapper .navbar-link .link:hover {
   color: #de6509;
 }
+.navbar-wrapper .navbar-link .active {
+  background-color: transparent;
+}
 .navbar-wrapper .navbar-link .link {
   position: relative;
   height: 1.8rem;
@@ -159,6 +162,9 @@
 .mobileMenu-wrapper .menu-body .link:hover {
   color: #de6509;
 }
+.mobileMenu-wrapper .menu-body .active {
+  background-color: transparent;
+}
 .mobileMenu-wrapper .mobileMenu-icons {
   display: flex;
   flex-direction: row;
@@ -190,6 +196,7 @@
   justify-content: space-around;
   padding: 3rem 0;
   background-color: #2F3349;
+  border-top: 2px solid #de6509;
 }
 .footer-wrapper .footer-logo {
   display: flex;
@@ -501,8 +508,23 @@
   filter: grayscale(100%);
 }
 
+.gallery-wrapper {
+  margin-bottom: 20rem;
+  background-color: #2F3349;
+}
+.gallery-wrapper .carousel {
+  padding: 0 20px;
+  margin-top: 7rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery-wrapper {
+    margin-bottom: 3rem;
+  }
+}
 body {
   margin: 0;
   padding: 0;
   --swiper-navigation-size: 20px;
+  background-color: #2F3349;
 }/*# sourceMappingURL=index.css.map */

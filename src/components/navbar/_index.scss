@@ -16,6 +16,7 @@
     }
   }
   .navbar-link {
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -29,6 +30,9 @@
     }
     .link:hover {
       color: $secondarycolor;
+    }
+    .active {
+      background-color: transparent;
     }
     .link {
       position: relative;
@@ -45,9 +49,10 @@
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
-      &:hover:after {
+      &:hover:after{
         width: 100%;
         left: 0;
+      
       }
     }
   }

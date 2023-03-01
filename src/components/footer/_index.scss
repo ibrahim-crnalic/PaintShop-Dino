@@ -6,7 +6,7 @@
   justify-content: space-around;
   padding: 3rem 0;
   background-color: $primarycolor;
-
+  border-top: 2px solid $secondarycolor;
   .footer-logo {
     display: flex;
     flex-direction: column;
