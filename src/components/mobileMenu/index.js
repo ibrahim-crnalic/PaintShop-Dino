@@ -2,8 +2,8 @@ import React from "react";
 import Logo from "../../assets/images/logo.png";
 import Close from "../../assets/icons/close.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import Instagram from "../../assets/icons/instagram.png";
-import Facebook from "../../assets/icons/facebook.png";
+import Instagram from "../../assets/icons/instagram.svg";
+import Facebook from "../../assets/icons/facebook.svg";
 
 export default function MobileMenu(props) {
   const navigate = useNavigate();
@@ -40,10 +40,10 @@ export default function MobileMenu(props) {
       </div>
       <div className="mobileMenu-icons">
         <a href="https://www.instagram.com/paintshopdino/">
-          <img src={Instagram} alt="instagram-icon" />
+          <img src={Instagram} alt="instagram-icon" className="social-icon"/>
         </a>
         <a href="https://m.facebook.com/people/Paintshop-Dino/100074982594299/?comment_id=Y29tbWVudDozMjI3Njk3ODAwMTA5NTJfMzIyNzgwNDUwMDA5ODg1">
-          <img src={Facebook} alt="facebook-icon" />
+          <img src={Facebook} alt="facebook-icon" className="social-icon-1" />
         </a>
       </div>
     </div>
