@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../assets/images/logo.png";
 import Close from "../../assets/icons/close.png";
 import { NavLink, useNavigate } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import Instagram from "../../assets/icons/instagram.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 
@@ -28,9 +29,9 @@ export default function MobileMenu(props) {
         <NavLink to="/" className="link" onClick={props.close}>
           POČETNA
         </NavLink>
-        <NavLink to="/#about" className="link" onClick={props.close}>
-          O NAMA
-        </NavLink>
+        <NavHashLink to="/#about" className="link" onClick={props.close}>
+            O NAMA
+          </NavHashLink>
         <NavLink to="/services" className="link" onClick={props.close}>
           USLUGE
         </NavLink>
