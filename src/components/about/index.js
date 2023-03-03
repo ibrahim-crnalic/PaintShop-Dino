@@ -20,7 +20,7 @@ export default function About() {
             autolimari koriste najnovije tehnologije i alate za rad kako bi se
             osigurao brz i učinkovit popravak vašeg vozila.
           </p>
-          <a className="read-more">Saznaj vise</a>
+          <a className="read-more" href="/services#metal-parts">Saznaj vise</a>
         </div>
       </div>
       <div className="about-row-second">
@@ -28,17 +28,17 @@ export default function About() {
           <p>
             Naša usluga autolakirerstva uključuje nanošenje boje i laka na
             vozilo kako bi se obnovila oštećena ili izblijedjela boja. Naši
-            autolakireri koriste najkvalitetnije boje i lake kako bi osigurali
-            izvrsnu kvalitetu rada. Svi radovi se izvode u modernoj i dobro
-            opremljenoj radionici koja omogućuje brzo i precizno obavljanje
+            autolakireri koriste najkvalitetnije boje i lakove kako bi osigurali
+            izvrstan kvalitet rada. Svi radovi se izvode u modernoj i dobro
+            opremljenoj radionici koja omogućava brzo i precizno obavljanje
             posla. Naš tim autolimara i autolakirera posvećen je vašim
             potrebama, a naš cilj je pružiti vam vrhunsku uslugu i izvrsne
-            rezultate. Garantiramo kvalitetu našeg rada i konkurentne cijene za
+            rezultate. Garantiramo kvalitet našeg rada i konkurentne cijene za
             sve usluge koje pružamo. Stoga, ako trebate uslugu autolimarije ili
             autolakirerstva, obratite se našoj autolimarsko-lakirerskoj radnji i
             dopustite nam da vam pružimo vrhunsku uslugu za vaše vozilo.
           </p>
-          <a className="read-more">Saznaj vise</a>
+          <a className="read-more" href="/services#painting">Saznaj vise</a>
         </div>
         <div className="about-left">
           <img src={Certificate2} alt="certificate-image" />

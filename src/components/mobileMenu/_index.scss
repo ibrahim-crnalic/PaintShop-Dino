@@ -41,6 +41,9 @@
     .link:hover {
       color: $secondarycolor;
     }
+    .active {
+      background-color: transparent;
+    }
   }
   .mobileMenu-icons {
     display: flex;
@@ -48,9 +51,17 @@
     justify-content: center;
     align-items: flex-end;
     height: 200px;
-    img {
+    .social-icon {
       width: 30px;
       height: 30px;
+      margin-right: 0.5rem;
+      padding-left: 0.5rem;
+      margin-bottom: 0.2rem;
+      cursor: pointer;
+    }
+    .social-icon-1 {
+      width: 35px;
+      height: 35px;
       margin-right: 0.5rem;
       padding-left: 0.5rem;
       cursor: pointer;

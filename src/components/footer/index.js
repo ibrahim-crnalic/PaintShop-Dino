@@ -1,10 +1,12 @@
 import React from "react";
 import Logo from "../../assets/images/logo.png";
-import Location from "../../assets/icons/location.png";
-import Call from "../../assets/icons/call.png";
-import Email from "../../assets/icons/email.png";
-import Instagram from "../../assets/icons/instagram.png";
-import Facebook from "../../assets/icons/facebook.png";
+import Location from "../../assets/icons/location.svg";
+import Call from "../../assets/icons/call.svg";
+import Email from "../../assets/icons/email.svg";
+import Instagram from "../../assets/icons/instagram.svg";
+import Facebook from "../../assets/icons/facebook.svg";
+import ScrollToTop from "react-scroll-to-top";
+
 
 export default function Footer() {
   return (
@@ -35,10 +37,10 @@ export default function Footer() {
         </a>
         <div className="social-media">
           <a href="https://www.instagram.com/paintshopdino/">
-            <img src={Instagram} alt="instagram-icon" />
+            <img src={Instagram} alt="instagram-icon" className="social-icon" />
           </a>
           <a href="https://m.facebook.com/people/Paintshop-Dino/100074982594299/?comment_id=Y29tbWVudDozMjI3Njk3ODAwMTA5NTJfMzIyNzgwNDUwMDA5ODg1">
-            <img src={Facebook} alt="facebook-icon" />
+            <img src={Facebook} alt="facebook-icon"  className="social-icon-1"/>
           </a>
         </div>
       </div>
@@ -72,6 +74,7 @@ export default function Footer() {
           <div className="working-days">
             <p className="days-title">Nedjelja</p>
             <p className="opening-hours">Zatvoreno</p>
+            <ScrollToTop smooth />
           </div>
         </div>
       </div>
