@@ -16,7 +16,6 @@
     }
   }
   .navbar-link {
-
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -49,10 +48,9 @@
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
-      &:hover:after{
+      &:hover:after {
         width: 100%;
         left: 0;
-      
       }
     }
   }
@@ -93,6 +91,9 @@
         width: 20px;
         height: 20px;
         cursor: pointer;
+      }
+      img:hover {
+        transform: scale(1.1);
       }
     }
   }

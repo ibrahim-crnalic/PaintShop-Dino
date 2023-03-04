@@ -37,8 +37,9 @@
         padding: 0 4rem;
       }
       .read-more {
-        background-color: $secondarycolor;
-        color: white;
+        background-color: transparent;
+        border: 1px solid $secondarycolor;
+        color: $secondarycolor;
         padding: 0.5rem 1rem;
         margin-top: 1rem;
         border-radius: 2rem;
@@ -46,8 +47,9 @@
         text-decoration: none;
       }
       .read-more:hover {
-        background-color: white;
-        color: $secondarycolor;
+        background-color: $secondarycolor;
+        border: 1px solid $secondarycolor;
+        color: white;
         cursor: pointer;
       }
     }

@@ -20,7 +20,7 @@ export default function About() {
             autolimari koriste najnovije tehnologije i alate za rad kako bi se
             osigurao brz i učinkovit popravak vašeg vozila.
           </p>
-          <a className="read-more" href="/services#metal-parts">Saznaj vise</a>
+          <a className="read-more" href="/services#metal-parts">Saznaj više</a>
         </div>
       </div>
       <div className="about-row-second">
@@ -38,7 +38,7 @@ export default function About() {
             autolakirerstva, obratite se našoj autolimarsko-lakirerskoj radnji i
             dopustite nam da vam pružimo vrhunsku uslugu za vaše vozilo.
           </p>
-          <a className="read-more" href="/services#painting">Saznaj vise</a>
+          <a className="read-more" href="/services#painting">Saznaj više</a>
         </div>
         <div className="about-left">
           <img src={Certificate2} alt="certificate-image" />
