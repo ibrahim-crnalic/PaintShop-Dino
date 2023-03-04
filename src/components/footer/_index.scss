@@ -45,6 +45,9 @@
         width: 20px;
         height: 20px;
       }
+      .info-img:hover {
+        transform: scale(1.1);
+      }
       p {
         font-family: $textfont;
         color: white;

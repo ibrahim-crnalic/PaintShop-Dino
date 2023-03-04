@@ -113,6 +113,9 @@
     height: 20px;
     cursor: pointer;
   }
+  .navContent .navbar-burger img:hover {
+    transform: scale(1.1);
+  }
 }
 @media only screen and (min-width: 1024px) {
   .navContent {
@@ -146,6 +149,9 @@
   height: 20px;
   cursor: pointer;
 }
+.mobileMenu-wrapper .menu-head .close img:hover {
+  transform: scale(1.1);
+}
 .mobileMenu-wrapper .menu-body {
   display: flex;
   flex-direction: column;
@@ -175,7 +181,6 @@
 .mobileMenu-wrapper .mobileMenu-icons .social-icon {
   width: 30px;
   height: 30px;
-  margin-right: 0.5rem;
   padding-left: 0.5rem;
   margin-bottom: 0.2rem;
   cursor: pointer;
@@ -244,6 +249,9 @@
 .footer-wrapper .footer-information .information .info-img {
   width: 20px;
   height: 20px;
+}
+.footer-wrapper .footer-information .information .info-img:hover {
+  transform: scale(1.1);
 }
 .footer-wrapper .footer-information .information p {
   font-family: "Rubic";
@@ -461,8 +469,9 @@
 }
 .about-wrapper .about-row .about-right .read-more,
 .about-wrapper .about-row-second .about-right .read-more {
-  background-color: #de6509;
-  color: white;
+  background-color: transparent;
+  border: 1px solid #de6509;
+  color: #de6509;
   padding: 0.5rem 1rem;
   margin-top: 1rem;
   border-radius: 2rem;
@@ -471,8 +480,9 @@
 }
 .about-wrapper .about-row .about-right .read-more:hover,
 .about-wrapper .about-row-second .about-right .read-more:hover {
-  background-color: white;
-  color: #de6509;
+  background-color: #de6509;
+  border: 1px solid #de6509;
+  color: white;
   cursor: pointer;
 }
 
@@ -533,6 +543,9 @@
   flex-direction: row;
   align-items: center;
 }
+.services-wrapper .services-first .first-left {
+  padding: 3rem;
+}
 .services-wrapper .services-first .first-right {
   padding: 3rem;
 }
@@ -557,11 +570,17 @@
   color: white;
   font-family: "Rubic";
 }
+.services-wrapper .services-second .second-right {
+  padding: 3rem;
+}
 .services-wrapper .services-third {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 3rem;
+}
+.services-wrapper .services-third .third-left {
+  padding: 3rem;
 }
 .services-wrapper .services-third .third-right {
   padding: 3rem;
@@ -579,6 +598,9 @@
     flex-direction: column;
     margin-top: 3rem;
   }
+  .services-wrapper .services-first .first-left {
+    padding: 0;
+  }
   .services-wrapper .services-first .first-right {
     padding: 2rem;
   }
@@ -588,8 +610,14 @@
   .services-wrapper .services-second .second-left {
     padding: 2rem;
   }
+  .services-wrapper .services-second .second-right {
+    padding: 0;
+  }
   .services-wrapper .services-third {
     flex-direction: column;
+  }
+  .services-wrapper .services-third .third-left {
+    padding: 0;
   }
   .services-wrapper .services-third .third-right {
     padding: 2rem;
@@ -602,6 +630,9 @@
 .gallery-wrapper .carousel {
   padding: 0 20px;
   margin-top: 7rem;
+}
+.gallery-wrapper .carousel .active-thumbnail {
+  border: 2px solid #de6509;
 }
 
 @media only screen and (max-width: 500px) {

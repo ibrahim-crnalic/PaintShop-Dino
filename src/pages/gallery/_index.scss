@@ -4,6 +4,9 @@
     .carousel{
         padding: 0 20px;
         margin-top: 7rem;
+        .active-thumbnail{
+            border: 2px solid $secondarycolor;
+        }
     
     }
 }

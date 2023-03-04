@@ -65,7 +65,13 @@ export default function Navbar() {
       </div>
       <div className={open ? "navNone" : "navContent"}>
         <div className="navbar-logo">
-          <img src={Logo} alt="navbar-logo" />
+          <img
+            src={Logo}
+            alt="navbar-logo"
+            onClick={() => {
+              navigate("/");
+            }}
+          />
         </div>
         <div className="navbar-burger">
           <img

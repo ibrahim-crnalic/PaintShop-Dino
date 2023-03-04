@@ -17,7 +17,7 @@ export default function Footer() {
           Efikasno i pouzdano rješenje za sve vrste oštećenja na vašem vozilu -
           vaš partner za autolimariju i lakiranje.
         </p>
-        <p className="coppy-rights">© Paintshop by Dino 2023. All rights reserved.</p>
+        <p className="coppy-rights">© Paint shop Dino 2023. All rights reserved.</p>
       </div>
       <div className="footer-information">
         <a className="information" href="tel:+38762346729">
