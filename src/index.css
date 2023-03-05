@@ -639,9 +639,6 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .gallery-wrapper {
-    height: 80vh;
-  }
   .gallery-wrapper .carousel {
     margin-top: 10rem;
   }
