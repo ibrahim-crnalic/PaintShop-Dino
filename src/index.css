@@ -349,9 +349,14 @@
     margin-top: 6rem;
     text-align: center;
   }
-  .footer-wrapper .footer-information .social-media img {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .footer-wrapper .footer-information .social-media {
+    margin-bottom: 1rem;
+  }
+  .footer-wrapper .footer-information .social-media .social-icon {
+    margin-top: 1rem;
+  }
+  .footer-wrapper .footer-information .social-media .social-icon-1 {
+    margin-top: 0.9rem;
   }
   .footer-wrapper .footer-workingHours {
     width: 90%;
