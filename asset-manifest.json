@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/paintshop-dino/static/css/main.7658f109.css",
+    "main.css": "/paintshop-dino/static/css/main.1956013f.css",
     "main.js": "/paintshop-dino/static/js/main.225ce009.js",
     "static/media/lakiranje.mp4": "/paintshop-dino/static/media/lakiranje.134dd121c1df5100aa6d.mp4",
     "static/media/hero-first.png": "/paintshop-dino/static/media/hero-first.522d2c4bee3bb7cc66ce.png",
@@ -63,11 +63,11 @@
     "static/media/call.svg": "/paintshop-dino/static/media/call.bbf7831996c6dc8353a2d8e86af7922e.svg",
     "static/media/location.svg": "/paintshop-dino/static/media/location.69269f7f9f451f09fc762bc076722869.svg",
     "index.html": "/paintshop-dino/index.html",
-    "main.7658f109.css.map": "/paintshop-dino/static/css/main.7658f109.css.map",
+    "main.1956013f.css.map": "/paintshop-dino/static/css/main.1956013f.css.map",
     "main.225ce009.js.map": "/paintshop-dino/static/js/main.225ce009.js.map"
   },
   "entrypoints": [
-    "static/css/main.7658f109.css",
+    "static/css/main.1956013f.css",
     "static/js/main.225ce009.js"
   ]
 }
