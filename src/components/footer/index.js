@@ -7,8 +7,8 @@ import Instagram from "../../assets/icons/instagram.svg";
 import Facebook from "../../assets/icons/facebook.svg";
 import ScrollToTop from "react-scroll-to-top";
 
-
 export default function Footer() {
+  const currentDate = new Date();
   return (
     <div className="footer-wrapper">
       <div className="footer-logo">
@@ -17,7 +17,9 @@ export default function Footer() {
           Efikasno i pouzdano rješenje za sve vrste oštećenja na vašem vozilu -
           vaš partner za autolimariju i lakiranje.
         </p>
-        <p className="coppy-rights">© Paint shop Dino 2023. All rights reserved.</p>
+        <p className="coppy-rights">
+          © Paint shop Dino {currentDate.getFullYear()}. All rights reserved.
+        </p>
       </div>
       <div className="footer-information">
         <a className="information" href="tel:+38762346729">
@@ -40,7 +42,7 @@ export default function Footer() {
             <img src={Instagram} alt="instagram-icon" className="social-icon" />
           </a>
           <a href="https://m.facebook.com/people/Paintshop-Dino/100074982594299/?comment_id=Y29tbWVudDozMjI3Njk3ODAwMTA5NTJfMzIyNzgwNDUwMDA5ODg1">
-            <img src={Facebook} alt="facebook-icon"  className="social-icon-1"/>
+            <img src={Facebook} alt="facebook-icon" className="social-icon-1" />
           </a>
         </div>
       </div>
@@ -78,7 +80,9 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <p className="coppy-rights-mobile">© Paintshop by Dino 2023. All rights reserved.</p>
+      <p className="coppy-rights-mobile">
+        © Paint shop Dino {currentDate.getFullYear()}. All rights reserved.
+      </p>
     </div>
   );
 }
