@@ -1,6 +1,7 @@
 import React from "react";
 import Certificate1 from "../../assets/images/certificate1.jpg";
 import Certificate2 from "../../assets/images/certificate2.jpg";
+import { NavHashLink } from "react-router-hash-link";
 
 export default function About() {
   return (
@@ -20,7 +21,7 @@ export default function About() {
             autolimari koriste najnovije tehnologije i alate za rad kako bi se
             osigurao brz i učinkovit popravak vašeg vozila.
           </p>
-          <a className="read-more" href="/services#metal-parts">Saznaj više</a>
+          <NavHashLink className="read-more" to="/services#metal-parts">Saznaj više</NavHashLink>
         </div>
       </div>
       <div className="about-row-second">
@@ -38,7 +39,7 @@ export default function About() {
             autolakirerstva, obratite se našoj autolimarsko-lakirerskoj radnji i
             dopustite nam da vam pružimo vrhunsku uslugu za vaše vozilo.
           </p>
-          <a className="read-more" href="/services#painting">Saznaj više</a>
+          <NavHashLink className="read-more" to="/services#painting">Saznaj više</NavHashLink>
         </div>
         <div className="about-left">
           <img src={Certificate2} alt="certificate-image" />
