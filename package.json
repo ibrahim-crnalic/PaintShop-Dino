@@ -1,7 +1,7 @@
 {
   "name": "paintshop-dino",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -43,6 +43,6 @@
     ]
   },
   "homepage": "http://ibrahim-crnalic.github.io/paintshop-dino",
-  "predeploy" : "npm run build",
-  "deploy" : "gh-pages -d build"
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 }
