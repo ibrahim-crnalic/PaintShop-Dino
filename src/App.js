@@ -9,8 +9,7 @@ import Footer from "./components/footer";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        {/*<Navbar /> */}
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/services" element={<Services />} />
@@ -18,7 +17,6 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-      
     </div>
   );
 }
